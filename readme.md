@@ -27,24 +27,25 @@ It includes:
 
 ------------------------------------------------------------------------
 
-# 📦 Project Structure
-
-zoomly-technical-assessment/ booking-api/ \# Backend (NestJS)
-booking-list/ \# Frontend (Next.js)
-
-------------------------------------------------------------------------
-
 # ⚙️ How to Run
 
 ## Backend
 
-cd booking-api npm install npm run start:dev
+```bash
+cd booking-api
+npm install
+npm run start:dev
+```
 
 Server: http://localhost:3000
 
 ## Frontend
 
-cd booking-list npm install npm run dev
+```bash
+cd booking-list
+npm install
+npm run dev
+```
 
 Open: http://localhost:3001/bookings
 
