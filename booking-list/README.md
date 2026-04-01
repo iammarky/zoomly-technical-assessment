@@ -1,109 +1,36 @@
-# Zoomly Technical Assessment
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This repository contains my submission for the Zoomly Senior Full Stack
-Developer Technical Assessment.
+## Getting Started
 
-It includes:
+First, run the development server:
 
--   Backend API (NestJS) → Task 1
--   Driver Matching Logic (TypeScript) → Task 2
--   Frontend Booking List (Next.js) → Task 3
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-------------------------------------------------------------------------
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# 🚀 Tech Stack
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Backend
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
--   NestJS
--   TypeScript
--   class-validator
+## Learn More
 
-## Frontend
+To learn more about Next.js, take a look at the following resources:
 
--   Next.js (App Router)
--   React
--   TypeScript
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-------------------------------------------------------------------------
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-# 📦 Project Structure
+## Deploy on Vercel
 
-zoomly-technical-assessment/ booking-api/ \# Backend (NestJS)
-booking-list/ \# Frontend (Next.js)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-------------------------------------------------------------------------
-
-# ⚙️ How to Run
-
-## Backend
-
-cd booking-api npm install npm run start:dev
-
-Server: http://localhost:3000
-
-## Frontend
-
-cd booking-list npm install npm run dev
-
-Open: http://localhost:3001/bookings
-
-------------------------------------------------------------------------
-
-# 🧩 Task 1 --- Booking API
-
--   POST /bookings endpoint
--   DTO validation (lat/lng, required fields)
--   Reject past scheduledTime
--   Generate bookingId
--   In-memory storage
-
-------------------------------------------------------------------------
-
-# 🚗 Task 2 --- Driver Matching
-
--   Filters unavailable drivers
--   Matches required tags
--   Calculates Euclidean distance
--   Returns closest driver or null
--   Deterministic tie-breaker
-
-------------------------------------------------------------------------
-
-# 🖥️ Task 3 --- Booking List UI
-
--   Fetch bookings
--   Loading state
--   Error state
--   Refresh button
-
-------------------------------------------------------------------------
-
-# ⚖️ Assumptions
-
--   No DB required
--   Simple distance calculation
--   No auth required
-
-------------------------------------------------------------------------
-
-# 🔁 Trade-offs
-
--   In-memory storage
--   Minimal UI
--   No caching
-
-------------------------------------------------------------------------
-
-# 📈 Production Improvements
-
--   Add database
--   Use geospatial queries
--   Add auth
--   Add tests
-
-------------------------------------------------------------------------
-
-# 👤 Author
-
-Mark Francis Saldivar
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
